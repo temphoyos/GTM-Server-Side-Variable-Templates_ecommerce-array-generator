@@ -37,7 +37,25 @@ items: [
        index: 3
       },    ]
 ```
-and generate an array like the following one: 
+...and generate an array like the following one: 
 ```
 new_product_id_array = ["0001","0002","0003","0004"]
 ```
+# How to use this server-side custom variable template
+Go to the 'Templates' section in your GTM server-side and click on the 'New template' button, on the variable templates area. Once on the custom variable template configuration screen, click on the 'Import' option of the menu on the top right corner of the screen. Then, upload the .tpl file you can download from this repository:
+
+<img width="1427" alt="Captura de pantalla 2023-11-27 a las 21 57 28" src="https://github.com/temphoyos/GTM-Server-Side-Variable-Templates_ecommerce-array-generator/assets/87236758/3d3512dd-632b-457d-b740-40cafec95d12">
+
+This will load the configuration of the variable. Click on the 'Save' button of the top right corner of the screen. 
+
+<img width="1430" alt="Captura de pantalla 2023-11-27 a las 22 05 26" src="https://github.com/temphoyos/GTM-Server-Side-Variable-Templates_ecommerce-array-generator/assets/87236758/b96ebabd-16f9-47f0-9242-cffdf5944057">
+
+Now go to the variables section of your GTM server-side container and click on 'Create new variable'. Select 'GTM server-side ecommerce arrays generator' as variable type. 
+
+<img width="1435" alt="Captura de pantalla 2023-11-27 a las 22 07 26" src="https://github.com/temphoyos/GTM-Server-Side-Variable-Templates_ecommerce-array-generator/assets/87236758/6c5c32e6-fd67-4264-9753-d33179430bf0">
+
+Type the item or items property name you wish to generate an array from in the 'Item property from which to generate and return an array' template text box. You may generate an array from any item or items property, the only condition is that it is contained within the items array of the event data object.
+
+<img width="1061" alt="Captura de pantalla 2023-11-27 a las 22 11 34" src="https://github.com/temphoyos/GTM-Server-Side-Variable-Templates_ecommerce-array-generator/assets/87236758/94b95a52-590d-4b51-8889-5db27e37e042">
+
+This variable will be evaluated each time an event data object is generated within our GTM server-side container. 
